@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dimens Converter 4.1</string>
+   <string>Dimens Adapter 4.1</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="density_lable">
@@ -47,7 +47,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>scale_density</string>
+     <string>scale density</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="scale_density_edit">
@@ -83,7 +83,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="label_file_path">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -126,10 +126,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Convert</string>
+     <string>  start  </string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_debug_info">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -139,15 +139,15 @@
      </rect>
     </property>
     <property name="text">
-     <string> log_info</string>
+     <string>debug info</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="lable_subtitle">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>200</x>
       <y>10</y>
-      <width>211</width>
+      <width>250</width>
       <height>31</height>
      </rect>
     </property>
@@ -158,7 +158,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Dimens Converter</string>
+     <string>Dimens Adapter</string>
     </property>
    </widget>
    <widget class="QToolButton" name="select_button">
@@ -171,7 +171,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>select</string>
+     <string>browse...</string>
     </property>
    </widget>
   </widget>
@@ -181,7 +181,7 @@
      <x>0</x>
      <y>0</y>
      <width>640</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>

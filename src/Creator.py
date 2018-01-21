@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 import Type
-import xml.dom.minidom as dom
+import Content
 import Switcher
+import xml.dom.minidom as dom
 
 
 class Creator:
@@ -12,6 +13,7 @@ class Creator:
         """  初始化density  scale_density  xdpi  """
         # 在内存中创建一个空的文档
         self.doc = dom.Document()
+        self.content = Content.Content()
         if density:
             self.density = density
         else:
@@ -46,8 +48,7 @@ class Creator:
 
         # 给节点添加一个文本节点
         if node_vlaue:
-            root.appendChild(self.doc.createTextNode(
-                str(Switcher.format_value(node_vlaue, self.density, self.scale_density, self.xdpi))))
+            root.appendChild(self.doc.createTextNode(str(Switcher.format_value(node_vlaue, self.density, self.scale_density, self.xdpi))))
 
         return root
 
@@ -55,7 +56,7 @@ class Creator:
         """  将解析的xml数据，重新生成一个新的xml文件  """
         root = self.create_root()
         if node_tree_list is not None:
-            function_output('>> Start to convert the data...')
+            function_output(self.content.start_convert_data())
             for node in node_tree_list:
                 for (key, value) in node.items():
                     node_item = self.create_element(Type.dimen, Type.name, key, value)

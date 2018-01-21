@@ -6,12 +6,14 @@ import sys
 import time
 import Type
 import Creator
+import Content
 
 """  将dimens.xml文件解析，根据用户设置的 density  cale_density  xdpi 比例创建转换后的xml（默认比例：1 1 160）  """
 
 
 class Transfer:
     def __init__(self, density, scale_density, xdpi, file_path):
+        self.content = Content.Content()
         if density:
             self.density = density
         else:
@@ -44,38 +46,36 @@ class Transfer:
 
     def generator(self, function_output):
         if self.density and self.scale_density and self.xdpi and self.file_path:
-            function_output('>> Start to parse parameters...')
+            function_output(self.content.start_parse_param())
             original_file_path, file_name = os.path.split(self.file_path)
             creator = Creator.Creator(self.density, self.scale_density, self.xdpi)
-            function_output('>> Loading the xml file : %s ' % original_file_path)
+            function_output(self.content.load_dimen_file() % self.file_path)
 
             # 解析xml文件
             node_list = self.parse_xml(self.file_path, creator)
-            function_output('>> File read successfully..')
+            function_output(self.content.load_success())
 
             # 生成xml格式数据
-            function_output('>> Start to generate the target xml data...')
+            function_output(self.content.generate_data())
             creator.creat_xml(node_list, function_output)
             # 开始写xml文档
             # 创建本次操作的单独目录
-            function_output('>> Start to generate the target xml file...')
+            function_output(self.content.generate_file())
             internal_write_path = original_file_path + self.local_time()
             if not os.path.exists(internal_write_path):
                 os.mkdir(internal_write_path)
-            internal_write_file_name = internal_write_path + '\dimens.xml'
+            internal_write_file_name = internal_write_path + '/dimens.xml'
             # 打开文件并
-            function_output('>> Start to write data to target xml file...')
+            function_output(self.content.start_write_date())
             with open(internal_write_file_name, 'w') as fp:
                 # 写入数据
                 creator.writexml(fp)
-                function_output('>> Write successfully...')
-                function_output('>> Target File Path: %s ' % internal_write_file_name)
+                function_output(self.content.convert_success())
+                function_output(self.content.new_file_path() % internal_write_file_name)
 
-            # 删除本次创建的文件（需要在用户下载完成后删除源文件）
-            # shutil.rmtree(wirte_file_name)
             del node_list
         else:
-            function_output('>> Please enter the correct information.')
+            function_output(self.content.param_error)
 
     def output_info(self, info):
         print(info)
@@ -85,20 +85,21 @@ class Transfer:
 
 
 if __name__ == '__main__':
+    content = Content.Content()
     if len(sys.argv) >= 5:
-        print('>>start to parse parameters...')
+        print(content.start_parse_param())
         density = float(sys.argv[1])
         scale_density = float(sys.argv[2])
         xdpi = float(sys.argv[3])
         file_path, file_name = os.path.split(sys.argv[4])
         transfer = Transfer(density, scale_density, xdpi, sys.argv[4])
         creator = Creator.Creator(density, scale_density, xdpi)
-        print('>>loading the xml file...')
+        print(content.load_dimen_file())
         # 解析xml文件
         node_list = transfer.parse_xml(sys.argv[4], creator)
-        print('>>file parsing successfully..')
-        print('>>start to convert the data...')
-        print('>>start to generate the target xml...')
+        print(content.load_success())
+        print(content.generate_data())
+        print(content.generate_file())
         # 生成xml格式数据
         creator.creat_xml(node_list, transfer.output_info)
         # 开始写xml文档
@@ -109,16 +110,16 @@ if __name__ == '__main__':
         wirte_file_name = write_path + transfer.write_file_path()
         # 打开文件并
         # print('>>writting data to the target xml file...')
-        print('>>start to write data to xml file...')
+        print(content.start_write_date())
         fp = open(wirte_file_name, 'w')
         # 写入数据
         creator.writexml(fp)
         # 关闭文件操作
         fp.close()
-        print('>>write successfully...')
-        print('>>Path: % s ' % wirte_file_name)
+        print(content.convert_success())
+        print(content.new_file_path() % wirte_file_name)
         # 删除本次创建的文件（需要在用户下载完成后删除源文件）
         # shutil.rmtree(wirte_file_name)
         del node_list
     else:
-        print('>>please enter the correct information.')
+        print(content.param_error())
