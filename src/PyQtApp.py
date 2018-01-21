@@ -6,7 +6,8 @@ import Creator
 import Content
 import Transfer
 import Constants
-from PyQt5.QtGui import QIcon
+from PyQt5 import QtGui
+from PyQt5.QtGui import QIcon, QColor
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QFileDialog
 
@@ -20,6 +21,7 @@ class PyQtApp(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
+        # 设置窗口图标
         self.setWindowIcon(QIcon(Constants.ICON_ANDROID))
         self.menu_bar = Menu.Menu(self)
         self.menu_bar.addMenu()
