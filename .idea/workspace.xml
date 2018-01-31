@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810dcef8-2767-4cfc-b0a2-29891db2b0b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DLL/api-ms-win-crt-runtime-l1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/icon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PythonSource-dimen.iml" afterPath="$PROJECT_DIR$/.idea/PythonSource-dimen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constants.py" afterPath="$PROJECT_DIR$/src/Constants.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Content.py" afterPath="$PROJECT_DIR$/src/Content.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Creator.py" afterPath="$PROJECT_DIR$/src/Creator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Menu.py" afterPath="$PROJECT_DIR$/src/Menu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PyQtApp.py" afterPath="$PROJECT_DIR$/src/PyQtApp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Switcher.py" afterPath="$PROJECT_DIR$/src/Switcher.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Transfer.py" afterPath="$PROJECT_DIR$/src/Transfer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Type.py" afterPath="$PROJECT_DIR$/src/Type.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/launcher.ui" afterPath="$PROJECT_DIR$/src/launcher.ui" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/android.png" afterPath="$PROJECT_DIR$/src/img/android.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/book.png" afterPath="$PROJECT_DIR$/src/img/book.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/boy.png" afterPath="$PROJECT_DIR$/src/img/boy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/icon.ico" afterPath="$PROJECT_DIR$/icon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/pencil.png" afterPath="$PROJECT_DIR$/src/img/pencil.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/recycling.png" afterPath="$PROJECT_DIR$/src/img/recycling.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/save.png" afterPath="$PROJECT_DIR$/src/img/save.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +22,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonSource-dimen$Transfer.coverage" NAME="Transfer Coverage Results" MODIFIED="1515580213290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PythonSource-dimen$pyqt_launcher.coverage" NAME="pyqt_launcher Coverage Results" MODIFIED="1515574504086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src_gui" />
-    <SUITE FILE_PATH="coverage/PythonSource-dimen$PyQtApp.coverage" NAME="PyQtApp Coverage Results" MODIFIED="1517369765552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PythonSource-dimen$PyQtApp.coverage" NAME="PyQtApp Coverage Results" MODIFIED="1517386269199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PythonSource-dimen$PyQtApp__1_.coverage" NAME="PyQtApp (1) Coverage Results" MODIFIED="1515653440784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PythonSource-dimen$Launcher.coverage" NAME="Launcher Coverage Results" MODIFIED="1515564359559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src_gui" />
   </component>
@@ -36,40 +31,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PyQtApp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PyQtApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="e#46#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transfer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Transfer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Constants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,12 +77,12 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Content.py" />
         <option value="$PROJECT_DIR$/src/Creator.py" />
-        <option value="$PROJECT_DIR$/src/Menu.py" />
         <option value="$PROJECT_DIR$/src/Switcher.py" />
         <option value="$PROJECT_DIR$/src/Transfer.py" />
         <option value="$PROJECT_DIR$/src/Type.py" />
         <option value="$PROJECT_DIR$/src/launcher.ui" />
         <option value="$PROJECT_DIR$/src/PyQtApp.py" />
+        <option value="$PROJECT_DIR$/src/Menu.py" />
         <option value="$PROJECT_DIR$/src/Constants.py" />
       </list>
     </option>
@@ -166,6 +128,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonSource-dimen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonSource-dimen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -180,11 +156,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PythonSource-dimen" />
+      <recent name="E:\PythonSource-dimen\src\img" />
       <recent name="E:\PythonSource-dimen\DLL" />
       <recent name="D:\PythonSource-dimen\src" />
       <recent name="D:\PythonSource-dimen\static\img" />
-      <recent name="C:\Users\user\Desktop\PythonSource-dimen\src" />
-      <recent name="C:\Users\user\Desktop\PythonSource-dimen\src_gui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\PythonSource-dimen\src" />
@@ -473,7 +449,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33812407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20574887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,7 +458,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35176653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67127496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47004607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39938557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -539,7 +515,7 @@
         <state relative-caret-position="925">
           <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#46#56#0" expanded="true" />
+            <element signature="e#46#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,7 +568,7 @@
         <state relative-caret-position="925">
           <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#46#56#0" expanded="true" />
+            <element signature="e#46#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +614,7 @@
         <state relative-caret-position="703">
           <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#46#56#0" expanded="true" />
+            <element signature="e#46#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,37 +720,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Content.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python36-32/Lib/ctypes/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="425" column="33" lean-forward="false" selection-start-line="425" selection-start-column="29" selection-end-line="425" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PyQtApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#46#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,10 +736,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PyQtApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#46#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state relative-caret-position="124">
+          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding />
         </state>
       </provider>

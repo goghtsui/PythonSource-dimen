@@ -26,17 +26,21 @@ INSTRUCTIONS = '\n 1. 通过【选项】或者手动填写 [scale] [scale densit
                '\n|  xxhdpi |  1080x1920 |         480         |   1dp=3px      |  12  |' \
 
 
-AUTHOR = '作者：shawn' \
+AUTHOR = '作者：xiaofeng' \
          '\n邮箱：xiaofeng355@sina.com'
 
-ICON_ANDROID = '../static/img/android.png'
+AUTHOR_ALL = '作者：xiaofeng' \
+         '\n邮箱：xiaofeng355@sina.com' \
+         '\n主页：http://xiaofeng.site'
 
-ICON_BOOK = '../static/img/book.png'
+ICON_ANDROID = 'img/android.png'
 
-ICON_BOY = '../static/img/boy.png'
+ICON_BOOK = 'img/book.png'
 
-ICON_PENCIL = '../static/img/pencil.png'
+ICON_BOY = 'img/boy.png'
 
-ICON_SAVE = '../static/img/save.png'
+ICON_PENCIL = 'img/pencil.png'
 
-ICON_LANG = '../static/img/recycling.png'
+ICON_SAVE = 'img/save.png'
+
+ICON_LANG = 'img/recycling.png'
