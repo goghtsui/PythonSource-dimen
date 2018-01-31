@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 import os
 
@@ -25,9 +26,8 @@ INSTRUCTIONS = '\n 1. 通过【选项】或者手动填写 [scale] [scale densit
                '\n|  xxhdpi |  1080x1920 |         480         |   1dp=3px      |  12  |' \
 
 
-AUTHOR = '作者：xiaofeng' \
-         '\n邮箱：xiaofeng355@sina.com' \
-         '\n主页：http://xiaofeng.site'
+AUTHOR = '作者：shawn' \
+         '\n邮箱：xiaofeng355@sina.com'
 
 ICON_ANDROID = '../static/img/android.png'
 

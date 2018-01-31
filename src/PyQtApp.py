@@ -1,15 +1,20 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 import sys
-import Menu
-import Creator
-import Content
-import Transfer
-import Constants
-from PyQt5 import QtGui
-from PyQt5.QtGui import QIcon, QColor
+from src import Menu
+from src import Content
+from src import Transfer
+from src import Constants
+from PyQt5.QtGui import QIcon
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QFileDialog
+import ctypes
+
+try:
+    temp1 = ctypes.windll.LoadLibrary('../DLL/api-ms-win-crt-runtime-l1-1-0.dll')
+except:
+    pass
 
 qtCreatorFile = "launcher.ui"
 
@@ -33,13 +38,15 @@ class PyQtApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.output_log(self.content.seprate())
         if self.density_edit.toPlainText() and self.scale_density_edit.toPlainText() and self.xdpi_edit.toPlainText() and self.file_path_edit.toPlainText():
             Transfer.Transfer(float(self.density_edit.toPlainText()), float(self.scale_density_edit.toPlainText()),
-                              float(self.xdpi_edit.toPlainText()), str(self.file_path_edit.toPlainText())).generator(self.output_log)
+                              float(self.xdpi_edit.toPlainText()), str(self.file_path_edit.toPlainText())).generator(
+                self.output_log)
         else:
             self.output_log(self.content.param_error())
 
     def selectFile(self):
         """   select xml file """
-        file_name, file_type = QFileDialog.getOpenFileName(self, Constants.dialog_title, Constants.dialog_init_path, Constants.dialog_file_type)
+        file_name, file_type = QFileDialog.getOpenFileName(self, Constants.dialog_title, Constants.dialog_init_path,
+                                                           Constants.dialog_file_type)
         self.output_log(self.content.output_file_path() % file_name)
         self.file_path_edit.append(file_name)
 

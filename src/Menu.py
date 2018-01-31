@@ -1,7 +1,9 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
-import Content
-import Constants
+
+from src import Content
+from src import Constants
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QAction, QMessageBox
 

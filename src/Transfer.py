@@ -1,12 +1,13 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 import os
 
 import sys
 import time
-import Type
-import Creator
-import Content
+from src import Type
+from src import Creator
+from src import Content
 
 """  将dimens.xml文件解析，根据用户设置的 density  cale_density  xdpi 比例创建转换后的xml（默认比例：1 1 160）  """
 

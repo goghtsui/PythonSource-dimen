@@ -1,6 +1,7 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
-import Constants
+from src import Constants
 
 
 class Content:

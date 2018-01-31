@@ -1,8 +1,9 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
-import Type
-import Content
-import Switcher
+from src import Type
+from src import Content
+from src import Switcher
 import xml.dom.minidom as dom
 
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
-import Type
+from src import Type
 
 """   将dimens中数值根据对应的 density 和 dp、px 等单位 转换为相应值 """
 
